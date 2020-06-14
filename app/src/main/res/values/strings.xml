@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MusicChart</string>
+    <string name="text_word">input</string>
+    <string name="butt">query</string>
+    <string name="menu_play">PlayList</string>
+    <string name="butt_playlist">List Empty</string>
+    <string name="text_mylist">My Music</string>
+</resources>
