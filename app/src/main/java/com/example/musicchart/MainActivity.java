@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         ListView listView = (ListView)findViewById(R.id.mylist);
-        String data[] = {"美国BillBoard榜","韩国Melon音乐榜","酷狗飙升榜"};
+        String data[] = {"美国BillBoard榜","韩国Melon音乐榜","酷狗飙升榜","日本公信榜"};
 
 
         ListAdapter adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,data);
@@ -88,8 +88,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setData(Uri.parse("https://www.kugou.com/yy/rank/home/1-6666.html?from=rank"));
             startActivity(intent);
+        }else if(position == 3) {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("https://www.kugou.com/yy/rank/home/1-4673.html?from=rank"));
+            startActivity(intent);
         }
-
     }
 
     @Override

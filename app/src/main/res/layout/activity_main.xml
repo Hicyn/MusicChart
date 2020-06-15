@@ -7,18 +7,26 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/bg" />
+
+    <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/logo"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="50dp"/>
 
     <ListView
         android:id="@+id/mylist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/imageView5"
-        android:layout_marginTop="30dp">
+        android:dividerHeight="50dp"
+        android:layout_marginTop="70dp">
 
     </ListView>
 </RelativeLayout>
